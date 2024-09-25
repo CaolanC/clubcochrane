@@ -2,7 +2,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
 
 .chill-container {
     height: 100vh;
-    background-color: rgb(30, 255, 240);
+    background-color: rgb(55, 52, 44);
     box-shadow: 0 10px -15px  black ;
     position: relative;
 }
@@ -11,10 +11,10 @@ $font-source-code-pro: "Source Code Pro", monospace;
     padding: 2vw;
     font-size: 6vw;
     text-transform: uppercase;
-    color: rgb(247, 0, 255);
-    text-shadow: 4px 4px 3px rgb(28, 255, 51);
+    color: rgb(255, 57, 136);
+    text-shadow: 4px 4px 3px rgb(100, 86, 86);
     backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(68, 30, 30, 0.6);
     top: 0;
     position: absolute;
     display: inline-block;
@@ -23,6 +23,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
     right: 3%;
     text-align: center;
     border-radius: 10px 10px;
+    //border-bottom: 5px solid rgb(212, 202, 202);
 }
 
 .chill-info {
@@ -54,8 +55,8 @@ $font-source-code-pro: "Source Code Pro", monospace;
     margin: 2vh 0 0 0;
     // border: black solid 1px;
     padding: 2vw 2vw 20vh 2vw;
-    background-color: rgb(0, 255, 136);
-    box-shadow: 10px 10px 10px rgb(136, 136, 136);
+    background-color: rgb(255, 57, 136); //rgb(239, 239, 239);
+    box-shadow: 10px 10px 10px rgb(33, 33, 33);
     border-radius: 1vh 1vh;
 }
 
