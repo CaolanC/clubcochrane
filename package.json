@@ -1,0 +1,23 @@
+{
+  "name": "mvc-cc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass wwwroot/scss/style.scss wwwroot/css/style.css",
+    "watch:sass": "sass --watch wwwroot/scss/style.scss:wwwroot/css/style.css",
+    "serve": "browser-sync start --proxy 'http://localhost:5151' --files '*/**/*.cs' 'wwwroot/js/shaders/*.glsl', 'wwwroot/css/*.css', 'Views/**/*.cshtml', 'Views/Shared/**/*.cshtml', 'wwwroot/js/*.j    // if (gl_FragCoord.y > 60) {s' --reload-delay 1000",
+    "dev": "concurrently \"npm run watch:sass\" \"dotnet watch run\" \"npm run serve\" --kill-others"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^9.0.1",
+    "sass": "^1.78.0"
+  },
+  "dependencies": {
+    "d3.js": "^0.0.2-security"
+  }
+}

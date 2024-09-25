@@ -1,0 +1,35 @@
+$font-source-code-pro: "Source Code Pro", monospace;
+
+.article-card {
+    border-radius: 2vh;
+    padding: 2vw;
+    background-color: rgb(214, 214, 214, 0.4);
+    backdrop-filter: blur(4px);
+    margin: 6vw;
+    font-family: $font-source-code-pro;
+    box-shadow: 2px 2px 3px 1px rgb(86, 72, 9);
+    display: flex;
+    align-items: center;
+}
+
+.article-card-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2vh;
+    background-color: rgb(197, 255, 247);
+    backdrop-filter: blur(4px);
+    margin: 0 0 2vh 0;
+    border-radius: 2vh;
+    display: inline-block;
+}
+
+.article-card-description {
+    background-color: rgb(255, 253, 255);
+    padding: 1vw;
+    border-radius: 2vh 2vh;
+}
+
+.article-card-image img {
+    max-width: 20vw;
+    margin: 0 0 0 10vw;
+}

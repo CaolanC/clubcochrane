@@ -1,0 +1,23 @@
+@model CC.Models.ChillInfoModel
+
+<div class="chill-container">
+    <h2 class="chill-wide-header">
+        @Model.Header
+    </h2>
+    @* <p class="chill-info">
+        @Model.Info
+    </p> *@
+    @* <p class="chill-key-point">
+        @Model.KeyPoint
+    </p> *@
+    <div class="chill-card-container">
+        @for(var i = 0; i < Model.SubArticleCards.Count; i++)
+        {
+        var Card = Model.SubArticleCards[i];
+        <div class="chill-card">
+            <img src="@Card.ImgPath">
+            <h2>@Card.Header</h2>
+        </div>
+        }
+    </div>
+</div>

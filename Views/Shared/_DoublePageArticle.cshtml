@@ -1,0 +1,9 @@
+@model CC.Models.DoublePageArticleViewModel;
+<div class="double-page-article-container">
+    <div class="double-page-article">
+        @await Html.PartialAsync("_PageArticle", Model.PageArticle1)
+    </div>
+    <div class="double-page-article">
+        @await Html.PartialAsync("_PageArticle", Model.PageArticle2)
+    </div>
+</div>

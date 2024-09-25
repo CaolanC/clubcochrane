@@ -1,0 +1,11 @@
+﻿    @using CC.Helpers;
+
+    @model CC.Models.PageArticleViewModel;
+
+
+    @{
+        ViewData["Title"] = "Contact Page";
+    }
+
+    @await Html.PartialAsync("_PageArticle", Model);
+    <h1>HERE WE FUCKING GO!</h1>

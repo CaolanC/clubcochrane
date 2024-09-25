@@ -1,0 +1,12 @@
+﻿    @using CC.Helpers;
+
+    @model CC.Models.HomePageModel;
+
+
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+
+    @await Html.PartialAsync("_PageArticle", Model.TopArticle)
+    @await Html.PartialAsync("_ChillInfoBlock", Model.MidArticle)
+    @await Html.PartialAsync("_TreeGraph", Model.TreeGraph)

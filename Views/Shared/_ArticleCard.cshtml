@@ -1,0 +1,11 @@
+@model CC.Models.ArticleCardViewModel;
+
+<div class="article-card">
+    <div class="article-card-text">
+        <h2 class="article-card-header">@Model.Title</h2>
+        <p class="article-card-description">@Model.Description</p>
+    </div>
+    <div class="article-card-image">
+        <img src=@Model.ImageUrl />
+    </div>
+</div>

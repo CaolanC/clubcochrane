@@ -1,0 +1,9 @@
+@model CC.Models.TreeGraphViewModel;
+
+<div class="node-diagram-container">
+    <svg id="#node-diagram"></svg>
+    <script>
+        var node_names = @Model.NodeNames;
+    </script>
+    <script src="~/js/node_graphic.js"></script>
+</div>

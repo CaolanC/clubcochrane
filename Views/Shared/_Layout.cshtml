@@ -1,0 +1,43 @@
+﻿@using CC.Helpers;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - mcv_cc</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-container">
+        <nav class="sticky-navbar">
+            <div class="navbar-logo-container">
+                <h1 class="logo-text-placeholder">@DynamicStrings.SiteName</h1>
+            </div>
+            <div class="navbar-links">
+                <a class="navbar-item" asp-page="/Index">Home</a>
+                <a class="navbar-item" asp-page="/Index">GSC Documentation</a>
+                @* <a class="navbar-item" asp-page="/Index">API's</a>
+                <a class="navbar-item" asp-page="/Index">Art</a>
+                <a class="navbar-item" asp-page="/Index">Blog</a>
+                <a class="navbar-item" asp-page="/Index">Digital CV</a>
+                <a class="navbar-item" asp-page="/Index">Projects</a>
+                <a class="navbar-item" asp-page="/Index">Food</a> *@
+                <a class="navbar-item" asp-page="/Contact">Contact</a>
+                @* <a class="navbar-item" asp-page="/Index">Tutorials</a> *@
+            </div>
+        </nav>
+    </div>
+    @RenderBody()
+    <footer class="border-top footer text-muted">
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

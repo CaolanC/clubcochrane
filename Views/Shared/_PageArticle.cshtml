@@ -1,0 +1,5 @@
+@model CC.Models.PageArticleViewModel;
+
+<div class="page-article" style="background: radial-gradient(circle at center, @Model.Color1, @Model.Color2, @Model.Color3);">
+    @await Html.PartialAsync("_ArticleCard", Model.ArticleCard)
+</div>
