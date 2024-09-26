@@ -138,6 +138,10 @@ canvas {
   font-family: "Source Code Pro", monospace;
 }
 
+.chill-card p {
+  margin-top: 5vh;
+}
+
 h1 {
   font-size: 50px;
 }
