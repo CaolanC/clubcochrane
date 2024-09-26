@@ -9,11 +9,15 @@ public class HomePageHelper
     public HomePageModel MakeHomePage()
 
     {
+
+        var plans = new List<string>();
+        plans.Add("Learn the .NET framework");
         var article_card = new ArticleCardViewModel
         (
-            "Hi!",
-            "My name is Caolan. I'm a computer science student studying in DCU. I'm a programmer, as well as a musician and a speedrunner with multiple world records. I put a lot of time into this thang",
-            "/images/generic/placeholder.jpg"
+            "Welcome!",
+            "I'm Caolan, a computer science student at Dublin City University (DCU) in Ireland. I created this website to: Learn the .NET framework Practice frontend design Provide a platform for any public APIs I might develop in the future Currently, I'm working on migrating my GSC documentation project here to make it more accessible. I'm also expanding the site with more pages to enhance the navigation bar. I'm incredibly passionate about computer science and spend as much time as possible programming. In addition to coding, I'm a guitarist with gigging experience and a speedrunner holding a few cheeky world records. I pride myself on my persistence and continuously learn from the many (many) mistakes I've made along the way. Thank you for visiting, and I hope you find something here that piques your interest!",
+            "/images/generic/placeholder.jpg",
+            plans
         );
 
         var top_article = new PageArticleViewModel
