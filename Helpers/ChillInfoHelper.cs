@@ -11,7 +11,8 @@ public class ChillInfoHelper
             new ChillInfoSubArticleCardModel (
             "/images/neofetch-debian.jpg",
             "Operating Systems",
-            "lol"
+            "lol",
+            "background-color: rgb(255, 57, 136);"
             )
         );
 
@@ -19,7 +20,8 @@ public class ChillInfoHelper
             new ChillInfoSubArticleCardModel (
             "/images/neofetch-debian.jpg",
             "Chess Engines",
-            "lol"
+            "lol",
+            "white"
             )
         );
 
@@ -27,7 +29,8 @@ public class ChillInfoHelper
             new ChillInfoSubArticleCardModel (
             "/images/neofetch-debian.jpg",
             "Operating Systems",
-            "lol"
+            "lol",
+            "rgb(149, 206, 255);"
             )
         );
 
@@ -35,7 +38,8 @@ public class ChillInfoHelper
             new ChillInfoSubArticleCardModel (
             "/images/neofetch-debian.jpg",
             "Operating Systems",
-            "lol"
+            "lol",
+            "yellow"
             )
         );
 

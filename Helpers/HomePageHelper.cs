@@ -11,8 +11,8 @@ public class HomePageHelper
     {
         var article_card = new ArticleCardViewModel
         (
-            "Not Welcome!",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Hi!",
+            "My name is Caolan. I'm a computer science student studying in DCU. I'm a programmer, as well as a musician and a speedrunner with multiple world records. I put a lot of time into this thang",
             "/images/generic/placeholder.jpg"
         );
 

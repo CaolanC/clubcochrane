@@ -6,7 +6,7 @@
   "scripts": {
     "build:sass": "sass wwwroot/scss/style.scss wwwroot/css/style.css",
     "watch:sass": "sass --watch wwwroot/scss/style.scss:wwwroot/css/style.css",
-    "serve": "browser-sync start --proxy 'http://localhost:5151' --files '*/**/*.cs' 'wwwroot/js/shaders/*.glsl', 'wwwroot/css/*.css', 'Views/**/*.cshtml', 'Views/Shared/**/*.cshtml', 'wwwroot/js/*.j    // if (gl_FragCoord.y > 60) {s' --reload-delay 1000",
+    "serve": "browser-sync start --proxy 'http://localhost:5151' --files '*/**/*.cs' '*/*.cs' 'wwwroot/js/shaders/*.glsl', 'wwwroot/css/*.css', 'Views/**/*.cshtml', 'Views/Shared/**/*.cshtml', 'wwwroot/js/*.j    // if (gl_FragCoord.y > 60) {s' --reload-delay 1000",
     "dev": "concurrently \"npm run watch:sass\" \"dotnet watch run\" \"npm run serve\" --kill-others"
   },
   "keywords": [],

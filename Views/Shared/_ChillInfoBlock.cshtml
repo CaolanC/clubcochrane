@@ -14,7 +14,7 @@
         @for(var i = 0; i < Model.SubArticleCards.Count; i++)
         {
         var Card = Model.SubArticleCards[i];
-        <div class="chill-card">
+        <div class="chill-card" style="background-color: @Card.Color">
             <img src="@Card.ImgPath">
             <h2>@Card.Header</h2>
         </div>
