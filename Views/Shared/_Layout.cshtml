@@ -20,7 +20,8 @@
                 <img class="navbar-logo" src='~/svg/logo-generic.svg' alt="@DynamicStrings.SiteName">
             </div>
             <div class="navbar-links">
-                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "navbar-item" })                
+                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "navbar-item" })
+                @Html.ActionLink("GSC", "GSC", "Home", null, new { @class = "navbar-item" })            
                 @* @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "navbar-item" }) *@
                 @* <a class="navbar-item" asp-page="/Index">GSC Documentation</a> *@
                 @* <a class="navbar-item" asp-page="/Index">API's</a>
@@ -35,8 +36,20 @@
         </nav>
     </div>
     @RenderBody()
-    <footer class="border-top footer text-muted">
-    </footer>
+    <div class="footer">
+        <div class="footer-random-quote">
+            <h2>@DynamicStrings.FooterQuote</h2>
+        </div>
+        <div class="footer-connect-info">
+            <h2>Connect With Me:</h2>
+        </div>
+        <div class="footer-contact-info">
+            <h2>Get In Touch:</h1>
+            <ul>
+                <li>Email: <a href="mailto:@DynamicStrings.ContactEmail">@DynamicStrings.ContactEmail</a></li>
+            </ul>
+        </div>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

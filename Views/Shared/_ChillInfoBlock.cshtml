@@ -14,10 +14,16 @@
         @for(var i = 0; i < Model.SubArticleCards.Count; i++)
         {
         var Card = Model.SubArticleCards[i];
-        <div class="chill-card" style="background-color: @Card.Color">
-            <img src="@Card.ImgPath">
-            <h2>@Card.Header</h2>
-            <p>@Card.Description</p>
+        int row = i / 4;
+        int col = i % 4;
+        <div class="chill-card @($"row-{row} col-{col}") @($"card{i}")">
+            <div class="chill-card-front">
+                <img src="@Card.ImgPath">
+                <h2>@Card.Header</h2>
+            </div>
+            <div class="chill-card-back">
+                <p>@Card.Description</p>
+            </div>
         </div>
         }
     </div>

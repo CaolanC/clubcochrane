@@ -3,46 +3,37 @@ using CC.Models;
 
 public class ChillInfoHelper
 {
+
+    private ChillInfoSubArticleCardModel CreateCard(string imagePath, string title, string description)
+    {
+        return new ChillInfoSubArticleCardModel(imagePath, title, description);
+    }
+
     public ChillInfoModel HomePage() 
     {
-        var ImgModelList = new List<ChillInfoSubArticleCardModel>();
-
-        ImgModelList.Add(
-            new ChillInfoSubArticleCardModel (
-            "/images/neofetch-debian.jpg",
-            "Operating Systems",
-            "I primarily develop on Linux, ",
-            "background-color: rgb(255, 57, 136);"
-            )
-        );
-
-        ImgModelList.Add(
-            new ChillInfoSubArticleCardModel (
-            "/images/neofetch-debian.jpg",
-            "Chess Engines",
-            "I create a new chess engine or game roughly every six months; it's my go-to project for learning OOP-based languages because there are many interesting ways to visualize the relationships between Piece, Board, Move, GameRules, etc. In my opinion, it's also an incredibly intuitive introduction to graph theory. Currently, I'm working on a full-stack project at school where we're supposed to build a chess game, but to spice things up, we're allowing users to define custom pieces. We're having lots of really interesting discussions on implementation: daemon vs. game engine, how to make the piece definition intuitive to the user on the frontend, how the backend should interpret this data to instantiate a new custom piece, how the chess engine should value and weight a custom piece, etc. I'm having a lot of fun with that right now. I still have lots to learn, so I'm glad to have the opportunity to engage with these challenges during my school work.",
-            "white"
-            )
-        );
-
-        ImgModelList.Add(
-            new ChillInfoSubArticleCardModel (
-            "/images/neofetch-debian.jpg",
-            "Operating Systems",
-            "lol",
-            "rgb(149, 206, 255);"
-            )
-        );
-
-        ImgModelList.Add(
-            new ChillInfoSubArticleCardModel (
-            "/images/neofetch-debian.jpg",
-            "Operating Systems",
-            "lol",
-            "yellow"
-            )
-        );
-
+        var ImgModelList = new List<ChillInfoSubArticleCardModel>
+        {
+            CreateCard(
+                "/images/neofetch-debian.jpg",
+                "Operating Systems",
+                "I primarily develop on Linux, "
+            ),
+            CreateCard(
+                "/images/neofetch-debian.jpg",
+                "Chess Engines",
+                "I create a new chess engine or game roughly every six months; it's my go-to project for learning OOP-based languages because there are many interesting ways to visualize the relationships between Piece, Board, Move, GameRules, etc. In my opinion, it's also an incredibly intuitive introduction to graph theory. Currently, I'm working on a full-stack project at school where we're supposed to build a chess game, but to spice things up, we're allowing users to define custom pieces. We're having lots of really interesting discussions on implementation: daemon vs. game engine, how to make the piece definition intuitive to the user on the frontend, how the backend should interpret this data to instantiate a new custom piece, how the chess engine should value and weight a custom piece, etc. I'm having a lot of fun with that right now. I still have lots to learn, so I'm glad to have the opportunity to engage with these challenges during my school work."
+            ),
+            CreateCard(
+                "/images/neofetch-debian.jpg",
+                "Game Hacking",
+                "lol"
+            ),
+            CreateCard(
+                "/images/neofetch-debian.jpg",
+                "Full Stack",
+                "lol"
+            ),
+        };
         
         var model = new ChillInfoModel (
             "What I want to learn:",

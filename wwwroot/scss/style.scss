@@ -3,6 +3,8 @@
 @import 'article_card';
 @import 'page_article';
 @import 'chill_article';
+@import 'footer';
+@import 'gsc_documentation';
 
 $color-test: rgba(0, 255, 200, 0.552);
 $navbar-opacity: 0.9;
@@ -26,11 +28,14 @@ h1 {
 }
 
 body {
-  min-height: 200vh;
+  height: 100vh;
+  width: 100%;
   //background-image: url('../images/background.png');
   //background-size: cover;
   padding-top: 9vh;
   background-color: rgb(55, 52, 44);
+  // display: flex;
+  // flex-direction: column;
 }
 
 .navbar-item {

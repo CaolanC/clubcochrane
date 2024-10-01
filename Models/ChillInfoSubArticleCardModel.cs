@@ -6,13 +6,11 @@ public class ChillInfoSubArticleCardModel
     public string Header { get; set; }
     public string Description { get; set; }
     
-    public string Color { get; set; }
 
-    public ChillInfoSubArticleCardModel(string img_path, string header, string description, string color)
+    public ChillInfoSubArticleCardModel(string img_path, string header, string description)
     {
         ImgPath = img_path;
         Header = header;
         Description = description;
-        Color = color;
     }
 }

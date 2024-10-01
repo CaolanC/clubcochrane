@@ -1,0 +1,45 @@
+.gsc-documentation-container {
+    background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+    width: 100%;
+    margin: 0;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.gsc-card {
+    background-color: #d9f3ff;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 8px 1px grey;
+    letter-spacing: -0.7px;
+    border-radius: 10px;
+    border-top: solid red 3px;
+}
+
+.gsc-card:first-of-type {
+    margin-top: 0;
+}
+
+.gsc-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.title-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down-arrow-icon {
+    width: 2rem;
+    border: 1px grey solid;
+}
+
+.function-title {
+}
+
+.function-extra-info {
+    background-color: #e6f7ff;
+}  

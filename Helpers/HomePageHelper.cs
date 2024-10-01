@@ -6,6 +6,17 @@ namespace CC.Helpers;
 
 public class HomePageHelper
 {
+
+    private readonly ChillInfoHelper _chillInfoHelper;
+
+    public HomePageHelper()
+    {
+        _chillInfoHelper = new ChillInfoHelper();
+    }
+    public HomePageHelper(ChillInfoHelper chillInfoHelper)
+    {
+        _chillInfoHelper = chillInfoHelper;
+    }
     public HomePageModel MakeHomePage()
 
     {

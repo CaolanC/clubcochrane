@@ -6,3 +6,10 @@
 // document.addEventListener('DOMContentLoaded', function () {
 //     let a = 0;
 // });
+
+
+document.querySelectorAll('.chill-card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+    });
+});

@@ -1,0 +1,23 @@
+.footer {
+    position: relative;
+    justify-content: space-around;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+
+    .footer-contact-info {
+        color: white;
+
+        h2 {
+            display: inline-block;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+    }
+}
+
