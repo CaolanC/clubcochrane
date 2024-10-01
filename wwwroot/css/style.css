@@ -237,7 +237,6 @@ canvas {
 
 .down-arrow-icon {
   width: 2vw;
-  border: 1px grey solid;
 }
 
 .function-title {
@@ -248,7 +247,7 @@ canvas {
 .function-dropdown {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.15s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 .function-dropdown p {
   padding: 1vh;
