@@ -54,11 +54,12 @@ $font-source-code-pro: "Source Code Pro", monospace;
     perspective: 2000px; /* Enables 3D space for card flip */
 
     .chill-card {
+        height: 100%;
         display: flex;
         justify-content: center;
         width: auto;
         margin: 0;
-        padding: 2vw;
+        // padding: 2vw;
         background-color: rgb(255, 57, 136);
         box-shadow: 10px 10px 10px rgb(33, 33, 33);
         border-radius: 1vh 1vh;
@@ -87,8 +88,8 @@ $font-source-code-pro: "Source Code Pro", monospace;
 
         .chill-card-front, .chill-card-back {
             position: absolute;
-            width: 90%;
-            height: 90%;
+            // width: 90%;
+            // height: 90%;
             backface-visibility: hidden;
         }
     
@@ -96,8 +97,11 @@ $font-source-code-pro: "Source Code Pro", monospace;
             font-family: $font-source-code-pro;
             transform: rotateY(180deg);
             background-color: white;
-            padding: 3vh;
-            font-size: 1vh;
+            // padding: 3vh;
+            font-size: 1.05rem;
+            width: 90%;
+            height: 90%;
+            margin: 3vh;
         }
         .chill-card-front {
             overflow: hidden;
@@ -107,6 +111,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
             flex-direction: column;
     
             img {
+                margin-top: 5vh;
                 width: 50%;
             }
     
@@ -118,6 +123,31 @@ $font-source-code-pro: "Source Code Pro", monospace;
     
             p {
                 text-align: start;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .chill-card-container {
+        height: auto;
+        padding: 3vw;
+        grid-template-columns: repeat(1, 1fr);
+        perspective: none;
+
+        .chill-card {
+            width: 100%;
+            min-height: 80vh;
+            height: auto;
+            margin-top: 10vh;
+        
+            .chill-card-back {
+                padding: 5%;
+                font-size: 0.6rem;
+            }
+
+            &:last-of-type {
+                margin-bottom: 10vh;
             }
         }
     }

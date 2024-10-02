@@ -139,11 +139,11 @@ canvas {
   perspective: 2000px; /* Enables 3D space for card flip */
 }
 .chill-card-container .chill-card {
+  height: 100%;
   display: flex;
   justify-content: center;
   width: auto;
   margin: 0;
-  padding: 2vw;
   background-color: rgb(255, 57, 136);
   box-shadow: 10px 10px 10px rgb(33, 33, 33);
   border-radius: 1vh 1vh;
@@ -168,16 +168,16 @@ canvas {
 }
 .chill-card-container .chill-card .chill-card-front, .chill-card-container .chill-card .chill-card-back {
   position: absolute;
-  width: 90%;
-  height: 90%;
   backface-visibility: hidden;
 }
 .chill-card-container .chill-card .chill-card-back {
   font-family: "Source Code Pro", monospace;
   transform: rotateY(180deg);
   background-color: white;
-  padding: 3vh;
-  font-size: 1vh;
+  font-size: 1.05rem;
+  width: 90%;
+  height: 90%;
+  margin: 3vh;
 }
 .chill-card-container .chill-card .chill-card-front {
   overflow: hidden;
@@ -187,6 +187,7 @@ canvas {
   flex-direction: column;
 }
 .chill-card-container .chill-card .chill-card-front img {
+  margin-top: 5vh;
   width: 50%;
 }
 .chill-card-container .chill-card .chill-card-front h2 {
@@ -198,6 +199,27 @@ canvas {
   text-align: start;
 }
 
+@media (max-width: 575px) {
+  .chill-card-container {
+    height: auto;
+    padding: 3vw;
+    grid-template-columns: repeat(1, 1fr);
+    perspective: none;
+  }
+  .chill-card-container .chill-card {
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    margin-top: 10vh;
+  }
+  .chill-card-container .chill-card .chill-card-back {
+    padding: 5%;
+    font-size: 0.6rem;
+  }
+  .chill-card-container .chill-card:last-of-type {
+    margin-bottom: 10vh;
+  }
+}
 .footer {
   position: relative;
   justify-content: space-around;
@@ -245,6 +267,7 @@ canvas {
     flex-direction: column-reverse;
     height: 100vh;
     justify-content: center;
+    overflow: hidden;
   }
   .footer .footer-section {
     margin-top: 10vh;
