@@ -94,6 +94,7 @@ canvas {
   .article-card .article-card-text {
     width: 100%;
     margin-top: 10vh;
+    padding: 20px;
   }
   .article-card .article-card-text .article-card-bullet-point-container {
     width: 100%;
