@@ -4,6 +4,12 @@
     <div class="article-card-text">
         <h2 class="article-card-header">@Model.Title</h2>
         <p class="article-card-description">@Model.Description</p>
+        <ul class="article-card-bullet-point-container">
+            @for(var i = 0; i < Model.BulletList.Count; i++) {
+                <li class="article-card-bullet-point">@Model.BulletList[i]</li>
+            }
+        </ul>
+        <p class="article-card-description">@Model.Description2</p>
     </div>
     <div class="article-card-image">
         <img src=@Model.ImageUrl />

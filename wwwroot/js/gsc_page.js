@@ -78,7 +78,7 @@ function load_gsc() {
             func.classList.add('gsc-card');
             func.innerHTML = `
                 <div class="title-icon-container">
-                    <h3 class="function-title">${element.return_type} ${element.fuction_name}(${parameters})</h3>
+                    <h3 class="function-title">${element.return_type} <b>${element.fuction_name}</b> (${parameters})</h3>
                     <img src="/icons/arrow-down.svg" class="down-arrow-icon" alt="down arrow icon"></img>
                 </div>
                 <div class="function-dropdown">

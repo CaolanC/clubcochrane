@@ -1,3 +1,5 @@
+$font-source-code-pro: "Source Code Pro", monospace;
+
 .gsc-documentation-container {
     // background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
     background-position: center; /* Centers the background */
@@ -14,6 +16,7 @@
 }
 
 .gsc-card {
+    font-family: $font-source-code-pro;
     background-color: #d9f3ff;
     margin: 2vh;
     padding: 0;
@@ -45,6 +48,7 @@
 .function-title {
     padding-left: 1vw;
     font-size: 16px;
+    font-weight: normal;
 }
 
 .function-dropdown {

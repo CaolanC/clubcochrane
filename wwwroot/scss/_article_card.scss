@@ -24,6 +24,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
 }
 
 .article-card-description {
+    font-size: 0.8rem;
     background-color: rgb(255, 253, 255);
     padding: 1vw;
     border-radius: 2vh 2vh;
@@ -32,4 +33,17 @@ $font-source-code-pro: "Source Code Pro", monospace;
 .article-card-image img {
     max-width: 20vw;
     margin: 0 0 0 10vw;
+}
+
+.article-card-bullet-point-container {
+    width: 75%;
+    margin-left: 2vw;
+}
+
+.article-card-bullet-point {
+    font-size: 0.8rem;
+    margin: 1vh;
+    padding: 1vh;
+    border-radius: 5px; 
+    background-color: rgb(197, 255, 247);
 }

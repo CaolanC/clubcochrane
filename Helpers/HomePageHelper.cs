@@ -22,11 +22,17 @@ public class HomePageHelper
     {
 
         var plans = new List<string>();
-        plans.Add("Learn the .NET framework");
+
+        plans.Add("Learn the .NET Framework");
+        plans.Add("As a place to host my GSC documentation project, and hopefully turn it into a community project.");
+        plans.Add("Practice Frontend Design");
+        plans.Add("Provide a platform for any public APIs I might develop in the future.");
+        plans.Add("I plan to create an \"Introduction to Programming\" course on YouTube, and hope to host notes and demos here, as well as an automated testing API so people can run their code against test cases.");
         var article_card = new ArticleCardViewModel
         (
             "Welcome!",
-            "I'm Caolan, a computer science student at Dublin City University (DCU) in Ireland. I created this website to: Learn the .NET framework Practice frontend design Provide a platform for any public APIs I might develop in the future Currently, I'm working on migrating my GSC documentation project here to make it more accessible. I'm also expanding the site with more pages to enhance the navigation bar. I'm incredibly passionate about computer science and spend as much time as possible programming. In addition to coding, I'm a guitarist with gigging experience and a speedrunner holding a few cheeky world records. I pride myself on my persistence and continuously learn from the many (many) mistakes I've made along the way. Thank you for visiting, and I hope you find something here that piques your interest!",
+            "I'm Caolan, a computer science student at Dublin City University (DCU) in Ireland. I created this website to:",
+            "I'm incredibly passionate about computer science and spend as much time as possible programming. In addition to coding, I'm a guitarist with gigging experience and a speedrunner holding a few cheeky world records. I pride myself on my persistence and continuously learn from the many (many) mistakes I've made along the way. Thank you for visiting, and I hope you find something here that piques your interest!",
             "/images/generic/placeholder.jpg",
             plans
         );

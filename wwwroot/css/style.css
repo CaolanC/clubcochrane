@@ -53,6 +53,7 @@ canvas {
 }
 
 .article-card-description {
+  font-size: 0.8rem;
   background-color: rgb(255, 253, 255);
   padding: 1vw;
   border-radius: 2vh 2vh;
@@ -63,8 +64,21 @@ canvas {
   margin: 0 0 0 10vw;
 }
 
+.article-card-bullet-point-container {
+  width: 75%;
+  margin-left: 2vw;
+}
+
+.article-card-bullet-point {
+  font-size: 0.8rem;
+  margin: 1vh;
+  padding: 1vh;
+  border-radius: 5px;
+  background-color: rgb(197, 255, 247);
+}
+
 .page-article {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,6 +246,7 @@ canvas {
 }
 
 .gsc-card {
+  font-family: "Source Code Pro", monospace;
   background-color: #d9f3ff;
   margin: 2vh;
   padding: 0;
@@ -263,6 +278,7 @@ canvas {
 .function-title {
   padding-left: 1vw;
   font-size: 16px;
+  font-weight: normal;
 }
 
 .function-dropdown {
