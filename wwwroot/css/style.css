@@ -59,7 +59,7 @@ canvas {
 .article-card-description {
   font-size: 0.8rem;
   background-color: rgb(255, 253, 255);
-  padding: 1vw;
+  padding: 2vh;
   border-radius: 2vh 2vh;
 }
 
@@ -108,7 +108,7 @@ canvas {
     justify-content: center;
   }
   .article-card .article-card-image img {
-    width: 50%;
+    width: 80%;
     margin-left: 0;
   }
 }
