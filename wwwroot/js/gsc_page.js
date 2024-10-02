@@ -38,13 +38,13 @@ function load_gsc() {
             if (called_by != null) {
                 called_by = called_by.replace(/^<+/, '');
                 called_by = called_by.replace(/>+$/, '');
-                caller = "<p>Called By: " + called_by + "</p>";
+                caller = "<p><b>Called By: " + called_by + "</b></p>";
             }
 
             var category = "";
             var gsc_category = element.category;
             if (gsc_category != null) {
-                category = "<p>Category: " + gsc_category + "</p>";
+                category = "<p><b>Category: " + gsc_category + "</b></p>";
             }
 
             if (optional_parameters) {
