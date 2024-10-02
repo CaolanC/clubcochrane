@@ -24,6 +24,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
     letter-spacing: -0.7px;
     border-radius: 10px;
     border-top: solid red 3px;
+    height: auto;
 }
 
 .gsc-card:first-of-type {
@@ -38,7 +39,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 3rem;
+    max-height: auto;
 }
 
 .down-arrow-icon {
