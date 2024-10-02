@@ -1,5 +1,7 @@
 $font-source-code-pro: "Source Code Pro", monospace;
 
+@import 'variables';
+
 .chill-container {
     background-color: rgb(55, 52, 44);
     box-shadow: 0 10px -15px black;
@@ -128,7 +130,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: $small-phone-breakpoint) {
     .chill-card-container {
         height: auto;
         padding: 3vw;

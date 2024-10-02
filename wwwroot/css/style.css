@@ -73,11 +73,12 @@ canvas {
 }
 
 .article-card-bullet-point-container {
-  width: 50%;
+  width: 85%;
   margin-left: 2vw;
 }
 
 .article-card-bullet-point {
+  width: 100%;
   font-size: 0.8rem;
   margin: 1vh;
   padding: 1vh;
@@ -85,7 +86,7 @@ canvas {
   background-color: rgb(197, 255, 247);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 900px) {
   .article-card {
     flex-direction: column-reverse;
     align-items: start;
@@ -235,7 +236,7 @@ canvas {
   text-align: start;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 900px) {
   .chill-card-container {
     height: auto;
     padding: 3vw;
@@ -298,7 +299,7 @@ canvas {
   color: #333;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 900px) {
   .footer {
     flex-direction: column-reverse;
     height: 100vh;
