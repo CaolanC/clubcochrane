@@ -21,7 +21,9 @@
             </div>
             <div class="navbar-links">
                 @Html.ActionLink("Home", "Index", "Home", null, new { @class = "navbar-item" })
-                @Html.ActionLink("GSC Documentation", "GSC", "Home", null, new { @class = "navbar-item" })            
+                <a href="@Url.RouteUrl("gsc")" class="navbar-item">GSC Documentation</a>
+                @* <a href="@Url.Action("GSC", "Home")" class="navbar-item">GSC Documentation</a> *@
+                @* @Html.ActionLink("GSC Documentation", "GSC", "Home", null, new { @class = "navbar-item" })             *@
                 @* @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "navbar-item" }) *@
                 @* <a class="navbar-item" asp-page="/Index">GSC Documentation</a> *@
                 @* <a class="navbar-item" asp-page="/Index">API's</a>
