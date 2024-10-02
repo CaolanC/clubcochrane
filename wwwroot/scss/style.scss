@@ -34,8 +34,9 @@ body {
   //background-size: cover;
   padding-top: 9vh;
   background-color: rgb(55, 52, 44);
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .navbar-item {

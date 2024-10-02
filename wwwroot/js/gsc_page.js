@@ -54,25 +54,25 @@ fetch(json_path)
             var game = "";
             var gsc_game = element.game;
             if (gsc_game) {
-                game = "<p>Game: " + gsc_game + "</p>";
+                game = "<p><b>Game:</b> " + gsc_game + "</p>";
             }
 
             var client_server = "";
             var gsc_client_server = element.client_or_server;
             if (gsc_client_server) {
-                client_server = "<p>Client/Server: " + gsc_client_server + "</p>";
+                client_server = "<p><b>Client/Server:</b> " + gsc_client_server + "</p>";
             }
 
             var summary = "";
             var gsc_summary = element.summary;
             if (gsc_summary) {
-                summary = "<p>Summary: " + gsc_summary + "</p>";
+                summary = "<p><b>Summary:</b> " + gsc_summary + "</p>";
             }
 
             var example = "";
             var gsc_example = element.example;
             if (gsc_example) {
-                example = "<p>Example: " + gsc_example + "</p>";
+                example = "<p><b>Example:</b> " + gsc_example + "</p>";
             }
 
             func.classList.add('gsc-card');
@@ -92,6 +92,7 @@ fetch(json_path)
                 `
             add_dropdown_functionality(func);
             func.name = element.fuction_name;
+            func.client_server = element.client_or_server;
             gsc_container.appendChild(func);
         })
     );
@@ -102,7 +103,7 @@ const searchBox = document.getElementById('search-box');
 searchBox.addEventListener('input', function() {
     const searchTerm = searchBox.value.toLowerCase();
     const cards = document.querySelectorAll('.gsc-card');
-    
+    // const cs_tickbox = document.getElementById('cs_tickbox').checked;  
     cards.forEach(card => {
         const title = card.name.toLowerCase();
         if (title.includes(searchTerm)) {

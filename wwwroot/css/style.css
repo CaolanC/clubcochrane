@@ -188,7 +188,8 @@ canvas {
   background-color: red;
   display: flex;
   align-items: center;
-  height: 25vh;
+  height: 20vh;
+  flex-shrink: 0;
 }
 .footer .footer-contact-info {
   color: white;
@@ -201,7 +202,6 @@ canvas {
 }
 
 .gsc-documentation-container {
-  background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
   background-position: center; /* Centers the background */
   background-repeat: no-repeat; /* Prevents tiling of the background */
   width: 100%;
@@ -214,7 +214,7 @@ canvas {
   background-color: #d9f3ff;
   margin: 2vh;
   padding: 0;
-  box-shadow: 0 0 8px 1px grey;
+  box-shadow: 0 0 8px 1px rgba(128, 128, 128, 0.359);
   letter-spacing: -0.7px;
   border-radius: 10px;
   border-top: solid red 3px;
@@ -253,6 +253,47 @@ canvas {
   padding: 1vh;
 }
 
+.criteria-container {
+  padding: 2vh;
+  right: 0;
+  background-color: red;
+  background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.criteria-container #search-box {
+  outline: none;
+  border-radius: 5px;
+  padding: 1vh;
+  width: 40vw;
+  background-color: rgb(250, 248, 248);
+}
+.criteria-container .criteria-checkbox {
+  position: relative;
+  display: inline-block;
+}
+.criteria-container .criteria-checkbox input[type=checkbox] {
+  display: none;
+}
+.criteria-container .criteria-checkbox .checkbox-style {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.criteria-container .criteria-checkbox .checkbox-style:hover {
+  background-color: orange;
+}
+.criteria-container .criteria-checkbox input[type=checkbox]:checked + .checkbox-style {
+  background-color: blue;
+  color: white;
+}
+
 h1 {
   font-size: 50px;
 }
@@ -267,6 +308,9 @@ body {
   width: 100%;
   padding-top: 9vh;
   background-color: rgb(55, 52, 44);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .navbar-item {

@@ -6,8 +6,8 @@
     background-color: red;
     display: flex;
     align-items: center;
-    height: 25vh;
-
+    height: 20vh;
+    flex-shrink: 0;
     .footer-contact-info {
         color: white;
 

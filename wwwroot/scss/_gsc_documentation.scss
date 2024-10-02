@@ -1,18 +1,23 @@
 .gsc-documentation-container {
-    background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
+    // background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
     background-position: center; /* Centers the background */
     background-repeat: no-repeat; /* Prevents tiling of the background */
     width: 100%;
     margin: 0;
     padding-top: 2vh;
     padding-bottom: 2vh;
+
+    //     background: radial-gradient(circle at 20px 20px, #f0f0f0 10%, transparent 11%) repeat;
+    //     background-size: 40px 40px;
+
+    // background-attachment: fixed;
 }
 
 .gsc-card {
     background-color: #d9f3ff;
     margin: 2vh;
     padding: 0;
-    box-shadow: 0 0 8px 1px grey;
+    box-shadow: 0 0 8px 1px rgba(128, 128, 128, 0.359);
     letter-spacing: -0.7px;
     border-radius: 10px;
     border-top: solid red 3px;
@@ -47,8 +52,56 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-
+    // background-color: rgba(211, 203, 203, 0.653);
     p {
         padding: 1vh;
     }
+}
+
+.criteria-container {
+    padding: 2vh;
+    right: 0;
+    background-color: red;
+    background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #search-box {
+        outline: none;
+        border-radius: 5px;
+        padding: 1vh;
+        width: 40vw;
+        background-color: rgb(250, 248, 248);
+    }
+
+    .criteria-checkbox {
+        position: relative;
+        display: inline-block;
+    
+        input[type="checkbox"] {
+            display: none; // Hides the checkbox but keeps its functionality
+        }
+    
+        .checkbox-style {
+            padding: 10px;
+            background-color: crimson;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            border: 1px solid grey;
+            border-radius: 5px;
+    
+            &:hover {
+                background-color: orange;
+            }
+        }
+    
+        input[type="checkbox"]:checked + .checkbox-style {
+            background-color: blue;
+            color: white;
+        }
+    }
+    
 }
