@@ -44,7 +44,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
 
 .chill-card-container {
     display: grid;
-    height: 150vh;
+    height: 200vh;
     padding: 20vh;
     grid-template-columns: repeat(2, 1fr);
     gap: 1vw 1vw;
@@ -87,13 +87,17 @@ $font-source-code-pro: "Source Code Pro", monospace;
 
         .chill-card-front, .chill-card-back {
             position: absolute;
-            width: 80%;
-            height: 80%;
+            width: 90%;
+            height: 90%;
             backface-visibility: hidden;
         }
     
         .chill-card-back {
+            font-family: $font-source-code-pro;
             transform: rotateY(180deg);
+            background-color: white;
+            padding: 3vh;
+            font-size: 1vh;
         }
         .chill-card-front {
             overflow: hidden;

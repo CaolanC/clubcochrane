@@ -129,7 +129,7 @@ canvas {
 
 .chill-card-container {
   display: grid;
-  height: 150vh;
+  height: 200vh;
   padding: 20vh;
   grid-template-columns: repeat(2, 1fr);
   gap: 1vw 1vw;
@@ -168,12 +168,16 @@ canvas {
 }
 .chill-card-container .chill-card .chill-card-front, .chill-card-container .chill-card .chill-card-back {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   backface-visibility: hidden;
 }
 .chill-card-container .chill-card .chill-card-back {
+  font-family: "Source Code Pro", monospace;
   transform: rotateY(180deg);
+  background-color: white;
+  padding: 3vh;
+  font-size: 1vh;
 }
 .chill-card-container .chill-card .chill-card-front {
   overflow: hidden;
@@ -236,6 +240,29 @@ canvas {
   color: #333;
 }
 
+@media (max-width: 575px) {
+  .footer {
+    flex-direction: column-reverse;
+    height: 100vh;
+    justify-content: center;
+  }
+  .footer .footer-section {
+    margin-top: 10vh;
+  }
+  .footer .footer-section h2 {
+    padding: 0 0 0 0;
+    margin: 0;
+  }
+  .footer .footer-section:first-of-type {
+    margin-bottom: 10vh;
+  }
+  .footer .footer-contact-info ul {
+    margin-top: 3vh;
+  }
+  .footer .footer-connect-info .social-icons {
+    margin-top: 3vh;
+  }
+}
 .gsc-documentation-container {
   background-position: center; /* Centers the background */
   background-repeat: no-repeat; /* Prevents tiling of the background */
@@ -330,10 +357,6 @@ canvas {
   color: white;
 }
 
-h1 {
-  font-size: 50px;
-}
-
 .logo-text-placeholder {
   display: inline;
   color: white;
@@ -397,6 +420,13 @@ body {
 
 .navbar-logo {
   height: 7vh;
+}
+
+@media (max-width: 575px) {
+  .navbar-logo {
+    display: none;
+    height: 1vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

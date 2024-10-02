@@ -47,3 +47,45 @@
   .social-icons a.github:hover {
     color: #333; 
   }
+
+  @media (max-width: 575px) {
+    .footer {
+
+      flex-direction: column-reverse;
+      height: 100vh;
+      justify-content: center;
+
+      .footer-section {
+        h2 {
+          padding: 0 0 0 0;
+          margin: 0;
+        }
+
+        margin-top: 10vh;
+        
+        &:first-of-type {
+
+            margin-bottom: 10vh;
+        }
+
+        // &:last-of-type {
+
+        //     margin-top: 10vh;
+        // }
+      }
+
+      .footer-contact-info {
+
+        ul {
+          margin-top: 3vh;
+        }
+      }
+
+      .footer-connect-info {
+
+        .social-icons {
+          margin-top: 3vh;
+        }
+      }
+    }
+  }

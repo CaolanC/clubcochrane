@@ -18,9 +18,6 @@ $navbar-bg-color-float: rgb(199, 199, 199, $navbar-opacity);
 
 $font-source-code-pro: "Source Code Pro", monospace;
 
-h1 {
-  font-size: 50px;
-}   
 
 .logo-text-placeholder {
   display: inline;
@@ -107,4 +104,11 @@ body {
 
 .navbar-logo {
   height: 7vh;
+}
+
+@media (max-width: 575px) {
+  .navbar-logo {
+    display: none;
+    height: 1vh;
+  }
 }

@@ -4,13 +4,13 @@ public class ChillInfoSubArticleCardModel
 {
     public string ImgPath { get; set; }
     public string Header { get; set; }
-    public string Description { get; set; }
+    public List<string> Paragraphs { get; set; }
     
 
-    public ChillInfoSubArticleCardModel(string img_path, string header, string description)
+    public ChillInfoSubArticleCardModel(string img_path, string header, List<string> paragraphs)
     {
         ImgPath = img_path;
         Header = header;
-        Description = description;
+        Paragraphs = paragraphs;
     }
 }
