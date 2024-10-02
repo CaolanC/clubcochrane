@@ -37,13 +37,24 @@
     </div>
     @RenderBody()
     <div class="footer">
-        <div class="footer-random-quote">
+        <div class="footer-random-quote footer-section">
             <h2>@DynamicStrings.FooterQuote</h2>
         </div>
-        <div class="footer-connect-info">
+        <div class="footer-connect-info footer-section">
             <h2>Connect With Me:</h2>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <div class="social-icons">
+                <!-- GitHub Icon -->
+                <a href="https://github.com/CaolanC" target="_blank" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/caolan-william-cochrane-6905b32a3/"  target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </div>
-        <div class="footer-contact-info">
+        <div class="footer-contact-info footer-section">
             <h2>Get In Touch:</h1>
             <ul>
                 <li>Email: <a href="mailto:@DynamicStrings.ContactEmail">@DynamicStrings.ContactEmail</a></li>

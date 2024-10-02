@@ -24,8 +24,8 @@ function add_dropdown_functionality(func) {
         }
     });
 }
-
-fetch(json_path)
+function load_gsc() {
+    fetch(json_path)
     .then(response => response.json())
     .then(data =>
         Object.values(data).forEach(element => {
@@ -96,7 +96,16 @@ fetch(json_path)
             gsc_container.appendChild(func);
         })
     );
-
+}
+document.addEventListener('DOMContentLoaded', function() {
+    // Run your JavaScript initialization code here
+    load_gsc();
+    // Simulate JavaScript processing
+    setTimeout(function() {
+        // Show the body after the first cycle
+        document.body.style.visibility = 'visible';
+    }, 2000); // Example delay for JavaScript tasks
+});
 
 const searchBox = document.getElementById('search-box');
 

@@ -185,20 +185,41 @@ canvas {
   justify-content: space-around;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   height: 20vh;
   flex-shrink: 0;
-}
-.footer .footer-contact-info {
+  box-shadow: 0 0 2px 1px rgba(190, 190, 190, 0.475);
   color: white;
+  padding: 0 3vh 0 10vh;
 }
-.footer .footer-contact-info h2 {
-  display: inline-block;
+.footer .footer-section h2 {
+  padding: 7vh 0 0 0;
 }
 .footer .footer-contact-info ul {
   list-style-type: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #0073b1;
+}
+
+.social-icons a.github:hover {
+  color: #333;
 }
 
 .gsc-documentation-container {
@@ -256,7 +277,6 @@ canvas {
 .criteria-container {
   padding: 2vh;
   right: 0;
-  background-color: red;
   background: radial-gradient(circle at center, #eb4034, #ed4c1f, #ed1fa8);
   display: flex;
   justify-content: space-between;
