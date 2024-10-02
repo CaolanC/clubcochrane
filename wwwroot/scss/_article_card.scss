@@ -12,6 +12,10 @@ $font-source-code-pro: "Source Code Pro", monospace;
     align-items: center;
 }
 
+.article-card-text {
+    width: 70%;
+}
+
 .article-card-header {
     font-weight: bold;
     text-transform: uppercase;
@@ -30,13 +34,17 @@ $font-source-code-pro: "Source Code Pro", monospace;
     border-radius: 2vh 2vh;
 }
 
+.article-card-image {
+    width: auto;
+}
+
 .article-card-image img {
-    max-width: 20vw;
+    width: auto;
     margin: 0 0 0 10vw;
 }
 
 .article-card-bullet-point-container {
-    width: 75%;
+    width: 50%;
     margin-left: 2vw;
 }
 
@@ -46,4 +54,36 @@ $font-source-code-pro: "Source Code Pro", monospace;
     padding: 1vh;
     border-radius: 5px; 
     background-color: rgb(197, 255, 247);
+}
+
+@media (max-width: 575px) {
+    .article-card {
+        flex-direction: column-reverse;
+        align-items: start;
+        margin-bottom: 10vh;
+        // .article-card-header {
+            
+        // }
+        .article-card-text {
+            width: 100%;
+            margin-top: 10vh;
+            .article-card-bullet-point-container {
+                width: 100%;
+                .article-card-bullet-point {
+                    width: 95%;
+                }
+            }
+        }
+
+        .article-card-image {
+            margin-top: 10vh;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 50%;
+                margin-left: 0;
+            }
+        }
+    }
 }

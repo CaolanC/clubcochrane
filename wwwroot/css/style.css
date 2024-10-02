@@ -41,6 +41,10 @@ canvas {
   align-items: center;
 }
 
+.article-card-text {
+  width: 70%;
+}
+
 .article-card-header {
   font-weight: bold;
   text-transform: uppercase;
@@ -59,13 +63,17 @@ canvas {
   border-radius: 2vh 2vh;
 }
 
+.article-card-image {
+  width: auto;
+}
+
 .article-card-image img {
-  max-width: 20vw;
+  width: auto;
   margin: 0 0 0 10vw;
 }
 
 .article-card-bullet-point-container {
-  width: 75%;
+  width: 50%;
   margin-left: 2vw;
 }
 
@@ -77,8 +85,35 @@ canvas {
   background-color: rgb(197, 255, 247);
 }
 
+@media (max-width: 575px) {
+  .article-card {
+    flex-direction: column-reverse;
+    align-items: start;
+    margin-bottom: 10vh;
+  }
+  .article-card .article-card-text {
+    width: 100%;
+    margin-top: 10vh;
+  }
+  .article-card .article-card-text .article-card-bullet-point-container {
+    width: 100%;
+  }
+  .article-card .article-card-text .article-card-bullet-point-container .article-card-bullet-point {
+    width: 95%;
+  }
+  .article-card .article-card-image {
+    margin-top: 10vh;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+  .article-card .article-card-image img {
+    width: 50%;
+    margin-left: 0;
+  }
+}
 .page-article {
-  height: 120vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
