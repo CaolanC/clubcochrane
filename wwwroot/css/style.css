@@ -191,17 +191,12 @@ canvas {
   /* Specific color variants for the first row of cards */
   /* Flipping the card when it has the 'flipped' class */
 }
-.chill-card-container .chill-card.row-0.col-0 {
-  background-color: orange;
-}
-.chill-card-container .chill-card.row-0.col-1 {
-  background-color: crimson;
-}
 .chill-card-container .chill-card.flipped {
   transform: rotateY(180deg); /* Flip the card 180 degrees on Y axis */
 }
 .chill-card-container .chill-card:hover {
-  background-color: red;
+  background-color: rgb(238, 57, 130);
+  box-shadow: 0px 10px 10px rgb(49, 49, 49);
 }
 .chill-card-container .chill-card .chill-card-front, .chill-card-container .chill-card .chill-card-back {
   position: absolute;
@@ -212,11 +207,12 @@ canvas {
   font-family: "Source Code Pro", monospace;
   transform: rotateY(180deg);
   background-color: white;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   width: 90%;
   height: 90%;
   margin: 3vh;
   overflow-y: auto;
+  border-radius: 1vh 1vh;
 }
 .chill-card-container .chill-card .chill-card-front {
   overflow: hidden;
@@ -227,12 +223,13 @@ canvas {
 }
 .chill-card-container .chill-card .chill-card-front img {
   margin-top: 5vh;
-  width: 50%;
+  width: 20vw;
 }
 .chill-card-container .chill-card .chill-card-front h2 {
   margin-top: 5vh;
   text-align: center;
   font-family: "Source Code Pro", monospace;
+  color: white;
 }
 .chill-card-container .chill-card .chill-card-front p {
   text-align: start;

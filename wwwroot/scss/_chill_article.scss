@@ -71,13 +71,6 @@ $font-source-code-pro: "Source Code Pro", monospace;
         cursor: pointer; /* Makes it clear that the card is clickable */
     
         /* Specific color variants for the first row of cards */
-        &.row-0.col-0 {
-            background-color: orange;
-        }
-    
-        &.row-0.col-1 {
-            background-color: crimson;
-        }
     
         /* Flipping the card when it has the 'flipped' class */
         &.flipped {
@@ -85,7 +78,8 @@ $font-source-code-pro: "Source Code Pro", monospace;
         }
     
         &:hover {
-            background-color: red;
+            background-color: rgb(238, 57, 130);
+            box-shadow: 0px 10px 10px rgb(49, 49, 49);
         }
 
         .chill-card-front, .chill-card-back {
@@ -100,12 +94,14 @@ $font-source-code-pro: "Source Code Pro", monospace;
             font-family: $font-source-code-pro;
             transform: rotateY(180deg);
             background-color: white;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             width: 90%;
             height: 90%;
             margin: 3vh;
             overflow-y: auto;
+            border-radius: 1vh 1vh;
         }
+        
         .chill-card-front {
             overflow: hidden;
             display: flex;
@@ -115,13 +111,14 @@ $font-source-code-pro: "Source Code Pro", monospace;
     
             img {
                 margin-top: 5vh;
-                width: 50%;
+                width: 20vw;
             }
     
             h2 {
                 margin-top: 5vh;
                 text-align: center;
                 font-family: $font-source-code-pro;
+                color: white;
             }
     
             p {
