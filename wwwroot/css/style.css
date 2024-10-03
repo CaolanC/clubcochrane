@@ -251,6 +251,9 @@ canvas {
   .chill-card-container .chill-card .chill-card-back {
     font-size: 0.6rem;
   }
+  .chill-card-container .chill-card .chill-card-front img {
+    width: 40vh;
+  }
   .chill-card-container .chill-card:last-of-type {
     margin-bottom: 10vh;
   }

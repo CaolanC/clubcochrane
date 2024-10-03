@@ -101,7 +101,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
             overflow-y: auto;
             border-radius: 1vh 1vh;
         }
-        
+
         .chill-card-front {
             overflow: hidden;
             display: flex;
@@ -143,6 +143,12 @@ $font-source-code-pro: "Source Code Pro", monospace;
         
             .chill-card-back {
                 font-size: 0.6rem;
+            }
+
+            .chill-card-front {
+                img {
+                    width: 40vh;
+                }
             }
 
             &:last-of-type {
