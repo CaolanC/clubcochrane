@@ -33,7 +33,7 @@ public class HomePageHelper
             "Welcome!",
             "My name is Caolan, a computer science student at Dublin City University (DCU) in Ireland. I created this website to:",
             "I'm incredibly passionate about computer science and spend as much time as possible programming. In addition to coding, I'm a guitarist with gigging experience and a speedrunner holding a few cheeky world records. I pride myself on my persistence and continuously learn from the many (many) mistakes I've made along the way. Thank you for visiting, and I hope you find something here that piques your interest!",
-            "/images/generic/placeholder.jpg",
+            "/images/me.jpg",
             plans
         );
 

@@ -39,10 +39,12 @@ canvas {
   box-shadow: 2px 2px 3px 1px rgb(86, 72, 9);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .article-card-text {
-  width: 70%;
+  max-width: 70%;
+  flex: 1 1 70%;
 }
 
 .article-card-header {
@@ -64,11 +66,17 @@ canvas {
 }
 
 .article-card-image {
-  width: auto;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  max-width: 30%;
+  margin-left: 5%;
 }
 
 .article-card-image img {
   width: auto;
+  max-width: 100%;
   margin: 0 0 0 10vw;
 }
 
@@ -93,7 +101,7 @@ canvas {
     margin-bottom: 10vh;
   }
   .article-card .article-card-text {
-    width: 100%;
+    max-width: 100%;
     margin-top: 10vh;
     padding: 20px;
   }
@@ -108,9 +116,10 @@ canvas {
     align-self: center;
     display: flex;
     justify-content: center;
+    max-width: 60%;
   }
   .article-card .article-card-image img {
-    width: 80%;
+    max-width: 100%;
     margin-left: 0;
   }
 }

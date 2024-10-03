@@ -11,10 +11,12 @@ $font-source-code-pro: "Source Code Pro", monospace;
     box-shadow: 2px 2px 3px 1px rgb(86, 72, 9);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .article-card-text {
-    width: 70%;
+    max-width: 70%;
+    flex: 1 1 70%;
 }
 
 .article-card-header {
@@ -36,11 +38,17 @@ $font-source-code-pro: "Source Code Pro", monospace;
 }
 
 .article-card-image {
-    width: auto;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-width: 30%;
+    margin-left: 5%;
 }
 
 .article-card-image img {
     width: auto;
+    max-width: 100%;
     margin: 0 0 0 10vw;
 }
 
@@ -68,7 +76,7 @@ $font-source-code-pro: "Source Code Pro", monospace;
             
         // }
         .article-card-text {
-            width: 100%;
+            max-width: 100%;
             margin-top: 10vh;
             padding: 20px;
             .article-card-bullet-point-container {
@@ -84,8 +92,9 @@ $font-source-code-pro: "Source Code Pro", monospace;
             align-self: center;
             display: flex;
             justify-content: center;
+            max-width: 60%;
             img {
-                width: 80%;
+                max-width: 100%;
                 margin-left: 0;
             }
         }
